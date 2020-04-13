@@ -10,22 +10,24 @@ import $ from 'jquery';
 // var card2 = $(this).val(); --> "9"
 
 $(document).ready(function() {
-
   //event listeners here
   $(".cards").click(function(){
-    (this).removeClass(".cards");
+    $(this).removeClass(".cards");
     var card1 = $(this).val(); 
     var card2 = $(this).val();
     var setOne = new CardSet (card1,card2);
     var matching = setOne.matchingCard();
     
     if (setOne.show.length === 2) {
-      (this).addClass(".matching")
+      $(this).addClass(".matching");
     } else if (setOne.show.length === 0) {
-      (this).addClass(".cards")
+      $(this).addClass(".cards");
     }
 
-    // output 
+    // console.log("card1", card1);
+    // console.log("card2", card2);
+    // console.log("setOne", setOne);
+    // // output 
     $("#output").html(matching);  
   });
 });

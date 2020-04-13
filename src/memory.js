@@ -5,7 +5,7 @@ export function CardSet (card1, card2) {
   this.card1 = card1;
   this.card2 = card2;
   this.show = [];
-};
+}
 
 CardSet.prototype.matchingCard = function () {
   if (this.card1 !== this.card2) {
@@ -23,13 +23,7 @@ CardSet.prototype.matchingCard = function () {
 //   this.show.matchingCard();
 // }
 
-CardSet.prototype.matchingCard = function () {
-  if (this.show[0] === this.show[1])
-    do something cool
-  } else {
-    flip both cards back over
-  }
-}  
+
 // - if items clicked on then --> run method
 // - add event listeners to 
 
