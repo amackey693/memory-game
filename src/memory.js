@@ -19,11 +19,11 @@ CardSet.prototype.matchingCard = function () {
 // - add event listeners to 
  
 
-// var card1 = $(this).val(); --> "7"
-// var card2 = $(this).val(); --> "9"
+
 
 var set1 = new CardSet (card1, card2)
-var matching = set1.matchingCard();
-console.log(matching)
+// var matching = set1.matchingCard();
+// console.log(matching)
+// console.log(set1);
 
 
