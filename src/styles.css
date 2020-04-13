@@ -1,0 +1,13 @@
+.cards {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 20px;
+}
+
+.matching {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 20px;
+}
